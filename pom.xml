@@ -8,14 +8,13 @@
 	<groupId>groovy-json-schema</groupId>
 	<artifactId>groovy-json-schema</artifactId>
 	<name>groovy-json-schema</name>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 
 	<description>Groovy Json Schema validator</description>
 
 	<scm>
 		<connection>scm:git:git@github.com:rwilcox/groovy-json-schema.git</connection>
 		<developerConnection>scm:git:git@github.com:rwilcox/groovy-json-schema.git</developerConnection>
-  	  <tag>0.0.2</tag>
   </scm>
 
 
