@@ -19,7 +19,7 @@
 
 
 	<properties>
-		<groovy.runtime.version>1.8.6</groovy.runtime.version>
+		<groovy.runtime.version>2.4.3</groovy.runtime.version>
 	</properties>
 
 
@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
-			<version>1.9.0</version>
+			<version>1.9.5</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
