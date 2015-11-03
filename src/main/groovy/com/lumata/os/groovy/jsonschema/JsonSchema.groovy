@@ -71,8 +71,8 @@ class JsonSchema {
 		obj.getMetaClass().getSchema = { -> jsonSchema }
 	}
 
-	static boolean isString(value){
-		return value == null || value instanceof String
+	static boolean isString(value){    	    
+		return value == null || value instanceof String || value instanceof GString
 	}
 
 	static boolean isNumber(value){
