@@ -25,7 +25,13 @@ class JsonSchema {
 		}
 
 		if(isNull(instance)){
-			return !schema.required
+		    println "** got null object, is required = ${!schema.required} (parent schema = ${schema.getParent()?.required})"
+		    
+		    def override = false
+		    if (schema.getParent()) {
+		        override = schema.getParent().required
+		    }
+			return ( !schema.required || override )
 		}
 
 		def type = schema.type
