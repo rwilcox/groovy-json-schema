@@ -50,8 +50,16 @@ class JsonSchema {
 			return isObject(instance) &&
 			schema.properties.every { name, property ->
 				def value = instance."$name"
+				
 				setParentIfNotNull(property, schema)
-				return conformsSchema(value, property)
+								
+				def doesConform = conformsSchema(value, property)
+				
+				if (!doesConform) {
+				    println "*** ${name}= ${value}: does not conform to schema ${property}"
+				}
+				
+				return doesConform
 			}
 		}
 
