@@ -3,6 +3,8 @@ Groovy JSON Schema
 
 An implemetation of the json schema specification : http://json-schema.org/
 
+Supports JSON Schema v3.
+
 Basic Usage
 -----------
 
